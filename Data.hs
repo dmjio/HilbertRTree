@@ -8,7 +8,7 @@ capacity = 10
 type LHV = Int
 type ObjID = String 
 
-data Rect = Rect { xlow, ylow, xhigh, yhigh :: Int }
+data Rect = Rect { xlow, ylow, xhigh, yhigh, hv :: Int }
             deriving (Show, Ord, Eq)
 
 data HRTree = Node { lhv :: LHV, rect :: Rect, children :: [HRTree] }
